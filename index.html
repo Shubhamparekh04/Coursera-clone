@@ -22,20 +22,66 @@
 
 <body>
 
-
-
-
-
-
-
     <!---------------------------------------------------------------------------------------------------------------------------
                                                              * NAVBAR START
     ----------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-white  w-100 top-0 start-0 position-fixed z-1 flex-column pt-0">
 
-    <nav class="navbar navbar-expand-lg bg-white w-100 position-fixed z-1">
+
+        <!-- banner visible on scrollDown -->
+        <div class="container-fluid py-3 z-1 position-absolute top-0" id="banner">
+
+            <div class="container d-flex justify-content-between px-5 align-items-center">
+                <img src="./image/coursera-plus-blue1.png" height="20px" alt="">
+
+                <span class="fw-bold text-center px-5">7,000+ courses, Guided Projects, Specializations, and<br>
+                    Professional
+                    Certificates</span>
+
+                <button class="btn btn-primary">Start 7-days Free Trial</button>
+            </div>
+
+        </div>
 
 
-        <div class="container gap-3">
+
+
+
+
+        <!-- dark navbar strip -->
+        <div class="container-fluid bg-dark text-white ps-5  mb-2" id="dark-nav">
+
+            <ul class="nav nav-underline  gap-5 ps-5" id="pills-tabs" role="tablist">
+                <li class="nav-item ps-5" role="presentation">
+                    <button class="nav-link active nav-link-white" id="pills-individual-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><a href="./courses.html" class="text-decoration-none nav-link-white">
+                            For <strong>Individuals</strong></a>
+
+
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-businesses-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><a href="./business.html" class="text-decoration-none nav-link-white">
+                            For <strong>Businesses</strong></a></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-Universities-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">For <strong>Universities</strong></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-governments-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">For <strong>Governments</strong></button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Main navbar -->
+        <div class="container gap-3 pt-1">
 
             <!-- logo -->
             <a class="navbar-brand order-2 order-lg-0" href="#"><img src="./image/logo.png" class="img-fluid"
@@ -101,7 +147,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="bi bi-cart3 position-relative text-muted fs-5" data-bs-toggle="dropdown"
+                        <a href="#" class="bi bi-cart3 position-relative text-muted fs-4" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
@@ -113,7 +159,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <span class="bi bi-globe2"> English</span>
+                            <span class="bi bi-globe2 fs-5"> English</span>
                         </a>
 
                         <ul class="dropdown-menu p-3">
@@ -160,8 +206,8 @@
 
 
         </div>
-    </nav>
 
+    </nav>
     <!---------------------------------------------------------------------------------------------------------------------------
                                                               * NAVBAR END 
     ----------------------------------------------------------------------------------------------------------------------------->
@@ -174,10 +220,10 @@
 
 
 
+
     <!---------------------------------------------------------------------------------------------------------------------------
                                                            * HERO SECTION START 
     ----------------------------------------------------------------------------------------------------------------------------->
-
     <div class="container-fluid  mt-lg-2 " id="hero">
         <div class="container col-xxl-8">
             <div class="row flex-lg-row-reverse align-items-center g-5">
@@ -204,10 +250,10 @@
             </div>
         </div>
     </div>
-
     <!---------------------------------------------------------------------------------------------------------------------------
                                                             * HERO SECTION END
     ----------------------------------------------------------------------------------------------------------------------------->
+
 
 
 
@@ -255,10 +301,14 @@
 
 
 
+
+
+
+
+
     <!---------------------------------------------------------------------------------------------------------------------------
                                                       * COURSERA PLUS DETAILS CARD START
     ----------------------------------------------------------------------------------------------------------------------------->
-
     <div class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 text-center">Invest in your career with Coursera Plus</h2>
         <P class="text-center w-75 mx-auto">Get access to videos in over 90% of courses, Specializations, and
@@ -311,7 +361,6 @@
 
         </div>
     </div>
-
     <!---------------------------------------------------------------------------------------------------------------------------
                                                       * COURSERA PLUS DETAILS CARD  END 
     ----------------------------------------------------------------------------------------------------------------------------->
@@ -320,19 +369,679 @@
 
 
 
+
+
+
+
+
     <!---------------------------------------------------------------------------------------------------------------------------
                                                       * CAROUSEL START 
     ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid carouselData">
+        <div class="container p-5" id="carousel">
+            <h2 class="text-center">See what you can learn with Coursera Plus</h2>
+            <div class="container p-5">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./image/1-card.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/2-card.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/3-card.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/4-card.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev position-absolute" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * CAROUSEL END 
+    ----------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="container-fluid" id="carousel">
-        <div class="container">
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * SEARCH COURSES START 
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid py-5 mb-5 border border-bottom-1">
+        <h2 class="text-center">Search the 7,000+ courses in Coursera Plus</h2>
+        <div class="container text-center mt-5">
+
+            <input type="search" class="w-50 p-1 border-end-0 border-2" placeholder="e.g Machine learning"><i
+                class="bi bi-search border border-black border-2  border-start-0"></i>
+
+            <div
+                class="d-flex justify-content-center align-items-center gap-2 gap-xl-4 flex-column flex-xl-row mt-4 mb-5">
+                <h6 class="text-end pt-2">POPULAR</h6>
+                <span class="btn border border-0 rounded-pill text-primary">Business</span>
+                <span class="btn border border-0 rounded-pill text-primary">Computer Science</span>
+                <span class="btn border border-0 rounded-pill text-primary">Data Science</span>
+                <span class="btn border border-0 rounded-pill text-primary">Health</span>
+                <span class="btn border border-0 rounded-pill text-primary">Information Technology</span>
+                <span class="btn border border-0 rounded-pill text-primary">Arts & Humanities</span>
+            </div>
 
         </div>
     </div>
 
     <!---------------------------------------------------------------------------------------------------------------------------
-                                                      * CAROUSEL END 
+                                                      * SEARCH COURSES END
     ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * THREE COLUMN (TESTIMONIAL) CAROUSAL START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container text-center my-5">
+
+        <h2 class="mt-5 text-center">Join thousands of Coursera Plus learners achieving their goals</h2>
+
+        <div class="container mb-5"><span>77% of learners report career benefits, like landing a new job, earning a
+                promotion, gaining applicable skills, and more.</span></div>
+        <div class="row">
+
+            <div class="col-lg-4 p-5">
+
+                <img class=" bd-placeholder-img rounded-circle" src="./image/alum-1.png" alt="" width="200" height="200"
+                    role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                <p class="text-justify text-start p-4 mt-4">
+                    I have a full-time job and 3 kids. <strong>I needed the flexibility offered by Coursera Plus in
+                        orderto achieve my goals.</strong> I learned business statistics and analysis to apply to my
+                    job, but my Coursera Plus subscription motivated me to keep learning. I have a new career goal to
+                    pivot into data analysis and data science. I'm learning Python now!
+                </p>
+
+                <span class=" mt-3">Abigail P. | United States</span>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 p-5">
+
+                <img class=" bd-placeholder-img rounded-circle" src="./image/alum-bhargav-2.png" alt="" width="200"
+                    height="200" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+
+                <p class="text-justify text-start p-4 mt-4">
+                    Coursera Plus keeps me motivated to learn. <strong>With each course, I'm getting more value out of
+                        my subscription.</strong> I can focus on life sciences—my main specialty—but also pursue other
+                    interests like society and religion. I can access almost anything with Coursera Plus!</p>
+
+                <span class=" mt-3">Shi Jie F. | Singapore</span>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 p-5">
+
+                <img class=" bd-placeholder-img rounded-circle" src="./image/alum-3.png" alt="" width="200" height="200"
+                    role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                <p class="text-justify text-start p-4 mt-4">
+                    I really appreciate the flexibility I get with Coursera Plus. <strong>I can try any course and
+                        switch to another one for no additional cost.</strong> This motivates me to learn even more—at
+                    one point I was taking three courses at the same time!</p>
+
+                <span>Inés K. | France</span>
+
+            </div><!-- /.col-lg-4 -->
+
+        </div>
+
+        <span my-5>Source: Coursera Learner Outcomes Survey 2023</span>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * THREE COLUMN (TESTIMONIAL) CAROUSAL START
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * PLANS  START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid text-center pb-5">
+        <h2 class="text-center my-5 p-5">Choose the plan that's right for you or your team's goals</h2>
+
+        <div class="container-fluid mb-5">
+            <span class="btn rounded-pill bg-white py-2  border">
+                <button class="px-5 py-2 my-1 btn btn-primary rounded-pill">For Individuals</button>
+                <button class="px-5 py-2 my-1 btn rounded-pill">For Teams</button>
+            </span>
+        </div>
+    </div>
+
+    <!-- pricing cards -->
+    <div class="container-fluid pb-5">
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center gap-1">
+
+                <!-- price card1 -->
+                <div class="col shadow-sm mt-4">
+                    <div class="mb-4 rounded-3 ">
+                        <div class=" py-3">
+                            <div class="row"> </div>
+                            <h3 class="mt-5 fw-bold fs-5">Single learning program</h3>
+                            <p class="mt-3 w-75 mx-auto">Learn a single topic or skill and earn a credential</p>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">₹4,087 – ₹6,590
+                            </h2>
+                            <small class="text-body-secondary fw-bolder">/month</small>
+                            <p class="mx-auto w-50  mt-4 mb-5 p-3"><strong>Visit an individual course or Specialization
+                                    page
+                                    to
+                                    purchase.</strong>
+                            </p>
+                            <div class="container mt-5">
+                                <hr>
+                                <div class="row text-start py-3">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark">
+                                            Access
+                                            all courses
+                                            within the
+                                            learning
+                                            program</span></i>
+                                </div>
+                                <hr>
+                                <div class="row text-start py-3 px-2 ">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark"> Earn a
+                                            certificate
+                                            upon
+                                            completion</span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- price card2 -->
+                <div class="col shadow-sm border border-5 border-primary">
+                    <p class="bg-primary text-light">Most popular</p>
+                    <div class="mb-4 rounded-3 ">
+                        <div class=" py-3">
+                            <div class="row"> </div>
+                            <h3 class="fw-bold fs-5">Coursera Plus Monthly</h3>
+                            <p class="mt-3 w-75 mx-auto">Complete multiple courses and earn credentials in the short
+                                term</p>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">₹4,922<small
+                                    class="text-body-secondary fw-bolder fs-5">/month</small>
+                            </h2>
+                            <button type="button" class="btn btn-primary rounded w-75 btn-lg fw-bold fs-5 mt-5">Start
+                                7-day
+                                free
+                                trial</button>
+                            <p class="mx-auto w-50  mt-4 mb-5 p-3">Cancel anytime
+                            </p>
+                            <div class="container mt-5">
+                                <hr>
+                                <div class="row text-start py-3">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark">
+                                            Access 7,000+ courses and Specializations from 170+ leading companies and
+                                            universities</span></i>
+                                </div>
+                                <hr>
+                                <div class="row text-start py-3 px-2 ">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark"> Earn unlimited certificates</span></i>
+                                </div>
+                                <hr>
+                                <div class="row text-start py-3">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark">
+                                            Learn job-relevant skills and tools with 1,000+ applied projects and
+                                            hands-on labs from industry experts</span></i>
+                                </div>
+                                <hr>
+                                <div class="row text-start py-3 px-2 ">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark"> Earn a
+                                            Choose from more than 15 Professional Certificate programs from industry
+                                            leaders like Google, Facebook, and more</span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- price card3 -->
+                <div class="col shadow-sm mt-4">
+                    <div class="mb-4 rounded-3 ">
+                        <div class=" py-3">
+                            <div class="row"> </div>
+                            <h3 class="mt-5 fw-bold fs-5">Coursera Plus Annual</h3>
+                            <p class="mt-3 w-75 mx-auto">Combine flexibility and savings with long-term learning goals
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">₹33,287<small
+                                    class="text-body-secondary fw-bolder fs-5">/year</small>
+                            </h2>
+                            <button type="button"
+                                class="fs-6 btn btn-outline-primary rounded btn-lg fw-bold fs-5 mt-5">Try
+                                Coursera
+                                Plus Annual </button>
+                            <p class="mx-auto w-50  mt-4 mb-5 p-3">14-day money-back guarantee
+                            </p>
+                            <div class="container mt-5">
+                                <hr>
+                                <p class="text-start w-75">Everything included in the monthly plan, plus:</p>
+                                <div class="row text-start py-3">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark">
+                                            Access
+                                            all courses
+                                            within the
+                                            learning
+                                            program</span></i>
+                                </div>
+                                <hr>
+                                <div class="row text-start py-3 px-2 ">
+                                    <i class="bi bi-check2 text-primary text-center w-75 mx-auto"><span
+                                            class="ms-4 text-dark"> Earn a
+                                            certificate
+                                            upon
+                                            completion</span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      *  PLANS  END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FAQ START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid">
+        <div class="py-5 container w-50">
+
+            <h2 class="text-center fs-1 pb-5">Frequently asked questions</h2>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Can I try Coursera Plus first, to make sure it's right for me?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes! We have two options, depending on which payment plan you
+                            choose.
+                            If you opt to make monthly payments, you can take advantage of a 7-day free trial to
+                            experience learning with Coursera Plus before you decide to purchase. We do capture your
+                            payment information when you subscribe, but you won't be charged until the end of your 7-day
+                            free trial. So, if you decide Coursera Plus isn't right for you, just cancel during the
+                            trial period and there will be no charge.
+                            If you opt to make an annual payment, you'll have up to 14 days to submit a refund request
+                            if you decide that Coursera Plus isn't right for you. The process is simple—just go to your
+                            My Purchases page within 14 days of your payment and submit a refund request. No additional
+                            information is required. Please note that any certificates that you earn within your first
+                            14 days will be revoked if you decide to get a refund within that period.
+                            For additional information, please see our full refund policy.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is included in Coursera Plus?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">With your Coursera Plus subscription, you get unlimited access to
+                            more than 7,000 courses, Projects, Specializations, and Professional Certificate programs in
+                            a variety of domains, including data science, business, computer science, health, personal
+                            development, humanities, and more. The majority of courses on Coursera are included. Certain
+                            courses, Specializations, and Professional Certificate programs are excluded. Coursera Plus
+                            also does not include degrees or MasterTrack™ Certificate programs. To determine if a
+                            particular offering is included, look for the Coursera Plus badge, or check this list of
+                            included content.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThird" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Will I save money with Coursera Plus?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThird" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes. If you're taking more than 1 course regularly, you could save
+                            up to 30% every month. The more you learn, the more you save.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            How many certificates can I earn with Coursera Plus?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">There's no limit. You'll earn a certificate for every course,
+                            Project, Specialization, or Professional Certificate you complete.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            What can I do with my certificates once I've earned them?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">You can showcase them on your LinkedIn profile, add them to your
+                            resume, and share them with your network. You can also share them with your employer to
+                            demonstrate your new skills, and your ability to apply those skills on the job.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Can I get reimbursed by my employer for Coursera Plus?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes, if your employer offers educational reimbursements that include
+                            online learning programs. You'll receive an email with your Coursera Plus receipt to submit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            What happens to my existing Coursera Specialization subscriptions when I subscribe to
+                            Coursera Plus?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">If you have existing Coursera Specialization subscriptions, they
+                            won't automatically cancel when you start a Coursera Plus subscription. You must cancel your
+                            existing subscriptions to avoid being charged for both Coursera Plus and single
+                            Specialization subscriptions. Your course progress will be saved and won't be impacted by
+                            canceling previous subscription(s).</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush pb-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Will Coursera Plus motivate me to learn?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Based on our data and research, we typically see higher completion
+                            rates for Coursera Plus learners. We also hear directly from learners that having a Coursera
+                            Plus subscription increases their motivation to learn more.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FAQ END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * COURSERA PLUS START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid text-center py-5">
+        <div class="container">
+            <img src="./image/coursera-plus-end.png" height="25px" alt="" class="my-3">
+            <p class="text-light w-50 mx-auto">Unlimited access to 7,000+ world-class courses, hands-on projects, and
+                job-ready
+                certificate
+                programs—all included in your subscription</p>
+            <p class="fw-bold fs-6 text-light">₹4,922/month, cancel anytime</p>
+
+            <button type="button" class="btn btn-primary rounded  fw-bold fs-5">Start
+                7-day
+                free
+                trial</button>
+
+            <p class="fw-bold text-light mt-3">
+                or ₹33,287/year with 14-day money-back guarantee
+            </p>
+
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * COURSERA PLUS END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 mb-5 ">
+
+
+
+            <div class="col mb-3">
+                <h5>Coursera</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">What We Offer</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Leadership</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Catalog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Coursera Plus</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Professional
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">MasterTrack®
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Degrees</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Enterprise</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Government</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Campus</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Partner</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social Impact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Community</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Beta Testers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The Coursera
+                            Podcast</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teaching Center</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>More</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Press</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Directory</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affiliates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Modern Slavery
+                            Statement</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manage Cookie
+                            Preferences</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 d-flex flex-column gap-4">
+                <h4>Mobile App</h4>
+                <img src="./image/app-store.png" alt="" width="200px">
+                <img src="./image/play-store.png" alt="" width="200px">
+                <div class="container "><img src="./image/certified-corp.png" alt="" width="100px" class="ms">
+                </div>
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between pb-4 pt-2 my-4 border-top">
+            <p>© 2024 Coursera Inc. All rights reserved.</p>
+
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-linkedin rounded-circle"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
 
 
 
@@ -345,6 +1054,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <!-- Local jQuery file link -->
     <script src="./script/script.js"></script>
 </body>
 

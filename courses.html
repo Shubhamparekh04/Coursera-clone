@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style/style.css">
+
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Coursera Plus | Unlimited Access to 7,0000 </title>
+
+</head>
+
+<body>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                 * NAVBAR START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-white w-100 top-0 start-0 position-fixed z-1 flex-column border-bottom pb-0">
+        <div class="container gap-3">
+
+            <!-- logo -->
+            <a class="navbar-brand order-2 order-lg-0" href="./index.html"><img src="./image/logo.png" class="img-fluid"
+                    alt=""></a>
+
+            <!-- search button in mobile screen -->
+            <i class="bi bi-search order-2"></i>
+
+            <!-- Hamburger -->
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse align-items-center gap-3" id="navbarSupportedContent">
+
+                <!-- Explore drope down -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown border border-black rounded-2 px-3 py-0">
+                        <a class="nav-link dropdown-toggle text-primary fw-bolder" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <!-- Search bar & button -->
+                <form class="d-flex w-50 position-relative" role="search">
+
+                    <input class="form-control rounded-pill lh-lg " type="search"
+                        placeholder="What do you want to learn ? " aria-label="Search">
+
+                    <div id="magni" class="d-flex align-items-center position-absolute">
+                        <button class="btn rounded-circle text-light" type="submit"><i class="bi bi-search"></i>
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Online degree/new career/language drop down -->
+                <ul class="navbar-nav mb-lg-0 ms-auto gap-3 align-items-center">
+
+
+                    <li class="nav-item">
+                        <a href="#" class="bi bi-cart3 position-relative text-muted fs-4" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                1</span>
+                        </a>
+                    </li>
+
+                    <!-- language drop down -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="bi bi-globe2 fs-5"> English</span>
+                        </a>
+
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <!-- Bell /dropdown -->
+                    <li class="dropdown-center my-auto" id="bell">
+                        <i class="bi bi-bell text-muted fs-5" data-bs-toggle="dropdown" aria-expanded="false">
+                        </i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Action two</a></li>
+                            <li><a class="dropdown-item" href="#">Action three</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--user (S) drop down-->
+                    <li class="nav-item btn-group">
+                        <a class="dropdown-toggle text-decoration-none  align-items-center" href="#"
+                            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            <span class="btn rounded-circle text-light fw-bold my-auto" id="profile">S</span>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container mt-3">
+
+            <ul class="nav nav-underline gap-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active course-nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link course-nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">My Learning</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link course-nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Online Degrees</button>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                  * NAVBAR END 
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                 * HOME TAB START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-lg-fluid container" id="home">
+
+        <!-- University -->
+        <div class="container">
+
+            <h2 class="fs-4 fw-normal text-black">Earn Your Degree</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 pt-2">
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/uni/first-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-1.png" height="30px" alt=""
+                                    class="rounded border"><small> S.P. Jain
+                                    Institute of
+                                    Management...</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Post Graduation Diploma in Management
+                                    Online</small></h6>
+                            <div class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                                </svg><small class="fw-normal fs-6"> &nbsp; &nbsp;Earn a degree</small></div>
+                        </div>
+                        <small class="text-muted ms-1 px-5 pb-2">Degree</small>
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/uni/second-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-2.png" height="30px" alt=""
+                                    class="rounded border"><small> Indian Statistical Institute</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Postgraduate Diploma in Applied
+                                    Statistics</small></h6>
+                            <div class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                                </svg><small class="fw-normal fs-6"> &nbsp; &nbsp;Earn a degree</small></div>
+                        </div>
+                        <small class="text-muted ms-1 px-5 pb-2">Degree</small>
+                    </div>
+                </div>
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/uni/third-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-3.png" height="30px" alt=""
+                                    class="rounded border"><small> Birla Institute of Technology & Scien...</small>
+                            </div>
+                            <h6 class="card-title fs-6 fw-bold py-2"><small>Bachelor of Science in Computer
+                                    Science</small>
+                            </h6>
+                            <div class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="35"
+                                    fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                                </svg><small class="fw-normal fs-6"> &nbsp; &nbsp;Earn a degree</small></div>
+                        </div>
+                        <small class="text-muted ms-1 px-5 pb-2">Degree</small>
+                    </div>
+                </div>
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/uni/fourth-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-4.png" height="30px" alt=""
+                                    class="rounded border"><small> IIT Roorkee</small></div>
+                            <h6 class="card-title fs-6 fw-bold py-2"><small>Executive MBA</small></h6>
+                            <div class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="35"
+                                    fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                                </svg><small class="fw-normal fs-6"> &nbsp; &nbsp;Earn a degree</small></div>
+                        </div>
+                        <small class="text-muted ms-1 px-5 pb-2">Degree</small>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn py-2 px-4 btn-outline-primary btn-lg fs-6 mt-3 fw-bold rounded">show 8
+                more</button>
+        </div>
+
+        <!-- peoples -->
+        <div class="container mt-5">
+
+            <h2 class="fs-4 fw-normal text-black">Most Popular Certificates</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 pt-2">
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/peoples/fifth-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-5.png" height="30px" alt=""
+                                    class="rounded border"><small> Google Cloud</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Architecting with Google Compute
+                                    Engine</small></h6>
+                            <small class="text-muted ">Specialization</small>
+                            <div class="d-flex gap-4 mt-2 text-muted">
+                                <i class="bi bi-hand-thumbs-up fs-5 "></i>
+                                <i class="bi bi-hand-thumbs-down fs-5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/peoples/sixth-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-6.png" height="30px" alt=""
+                                    class="rounded border"><small> Google</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Google Data Analytics</small></h6>
+                            <span class="bi bi-patch-check-fill text-primary mb-2"><small> Make Progress towards a
+                                    degree</span></small></span>
+                            <small class="text-muted ">Professional Certificate</small>
+                            <div class="d-flex gap-4  text-muted">
+                                <i class="bi bi-hand-thumbs-up fs-5"></i>
+                                <i class="bi bi-hand-thumbs-down fs-5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/peoples/seventh-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-6.png" height="30px" alt=""
+                                    class="rounded border"><small> Google</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Google Project Management</small></h6>
+                            <span class="bi bi-patch-check-fill text-primary mb-2"><small> Make Progress towards a
+                                    degree</span></small></span>
+                            <small class="text-muted ">Professional Certificate</small>
+                            <div class="d-flex gap-4  text-muted">
+                                <i class="bi bi-hand-thumbs-up fs-5"></i>
+                                <i class="bi bi-hand-thumbs-down fs-5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/peoples/eighth-uni.png" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <div><img src="./image/course/icon/icon-6.png" height="30px" alt=""
+                                    class="rounded border"><small> Google</small></div>
+                            <h6 class="card-title fs-6 fw-bold pt-2"><small>Google IT Support</small></h6>
+                            <span class="bi bi-patch-check-fill text-primary mb-2"><small> Make Progress towards a
+                                    degree</span></small></span>
+                            <small class="text-muted ">Professional Certificate</small>
+                            <div class="d-flex gap-4  text-muted">
+                                <i class="bi bi-hand-thumbs-up fs-5"></i>
+                                <i class="bi bi-hand-thumbs-down fs-5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <button type="button" class="btn py-2 px-4 btn-outline-primary btn-lg fs-6 mt-3 fw-bold rounded">show 8
+                more</button>
+        </div>
+
+        <!--Find new career-->
+        <div class="container mt-5">
+
+            <h2 class="fs-4 fw-normal text-black">Find your New Career</h2>
+
+            <div class="d-flex flex gap-1 my-3 flex-wrap">
+                <span class="bg-secondary text-white rounded-pill border border-2 px-2 p-1 fw-bold">All
+                    Careers
+                    (33)</span>
+                <span class=" rounded-pill border border-2 px-2 p-1 fw-bold">Software Engineering & IT (15)</span>
+                <span class=" rounded-pill border border-2 px-2 p-1 fw-bold">Business (10)</span>
+                <span class=" rounded-pill border border-2 px-2 p-1 fw-bold">Sales & Marketing (5)</span>
+                <span class=" rounded-pill border border-2 px-2 p-1 fw-bold">Data Science & Analytics (3)</span>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 pt-2">
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/newcareer/career-1.jpg" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Data Analyst</h4>
+                            <span class="text-muted">Collect, organize, and transform data to
+                                make
+                                informed
+                                decisions.</span>
+                            <p class="fs-6 mt-3 text-muted"><strong class="text-black">Great if you like:
+                                </strong>Attention to detail,
+                                Problem
+                                solving,
+                                Working with
+                                numbers</p>
+
+
+                            <strong>$90,500 <span class="text-muted fw-normal fs-6"> median salary ¹</span>
+                            </strong><br>
+                            <strong>82,489 <span class="text-muted fw-normal fs-6"> jobs available ¹</span>
+                            </strong>
+                            <hr>
+                            <h6>Credentials from leading partners</h6>
+                            <div><img src="./image/course/icon/icon-6.png" height="20px" alt="" class=" border"><small
+                                    class="text-primary ms-3"> Google Data Analyst</small>
+                            </div>
+                            <div><img src="./image/course/newcareer/c1-logo-2.png" height="25px" width="23px" alt=""
+                                    class="border py-2"><small class="text-primary ms-3"> IBM Data
+                                    Analyst</small>
+                            </div>
+                            <div>
+                                <img src="./image/course/newcareer/c1-logo-2.png" height="25px" width="23px" alt=""
+                                    class="border py-2"><small class="text-primary ms-3"> IBM Data Analytics with
+                                    Excel & R</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/newcareer/career-2.jpg" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Project Manager</h4>
+                            <span class="text-muted">Oversee the planning and execution of projects to ensure they’re
+                                successful.</span>
+                            <p class="fs-6 mt-3 text-muted"><strong class="text-black">Great if you like:
+                                </strong>Leading a team, Problem solving, Communication</p>
+
+
+                            <strong>$102,800 <span class="text-muted fw-normal fs-6"> median salary ¹</span>
+                            </strong><br>
+                            <strong>336,402 <span class="text-muted fw-normal fs-6"> jobs available ¹</span>
+                            </strong>
+                            <hr>
+                            <h6>Credentials from leading partners</h6>
+                            <div><img src="./image/course/icon/icon-6.png" height="20px" alt="" class=" border"><small
+                                    class="text-primary ms-3"> Google Project Management</small>
+                            </div>
+                            <div class="mb-4"><img src="./image/course/newcareer/c1-logo-2.png" height="25px"
+                                    width="23px" alt="" class="border py-2"><small class="text-primary ms-3"> IBM
+                                    Project
+                                    Manager</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col rounded-4">
+                    <div class="card rounded-4">
+                        <img src="./image/course/newcareer/career-3.jpg" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Cybersecurity Professional</h4>
+                            <span class="text-muted">Develop strategies to protect organizations from cyber-attacks and
+                                disruptions.</span>
+                            <p class="fs-6 mt-3 text-muted"><strong class="text-black">Great if you like:
+                                </strong>Problem solving, Technical challenges, Attention to detail</p>
+
+
+                            <strong>$119,700 <span class="text-muted fw-normal fs-6"> median salary ¹</span>
+                            </strong><br>
+                            <strong>147,973 <span class="text-muted fw-normal fs-6"> jobs available ¹</span>
+                            </strong>
+                            <hr>
+                            <h6>Credentials from leading partners</h6>
+                            <div><img src="./image/course/icon/icon-6.png" height="20px" alt="" class=" border"><small
+                                    class="text-primary ms-3"> Google Cybersecurity</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col rounded-4 mb-5">
+                    <div class="card rounded-4">
+                        <img src="./image/course/newcareer/career-4.jpg" style="object-fit: cover;"
+                            class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">UX Designer</h4>
+                            <span class="text-muted">Make digital and physical products easier and more enjoyable to
+                                use.</span>
+                            <p class="fs-6 mt-3 text-muted"><strong class="text-black">Great if you like:
+                                </strong>Understanding people, Thinking creatively, Problem solving</p>
+
+
+                            <strong>$121,200 <span class="text-muted fw-normal fs-6"> median salary ¹</span>
+                            </strong><br>
+                            <strong>70,778 <span class="text-muted fw-normal fs-6"> jobs available ¹</span>
+                            </strong>
+                            <hr>
+                            <h6>Credentials from leading partners</h6>
+                            <div class="mb-5"><img src="./image/course/icon/icon-6.png" height="20px" alt=""
+                                    class=" border"><small class="text-primary ms-3"> Google UX Design</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button type="button" class="btn pt-2 px-4 btn-outline-primary btn-lg fs-6 fw-bold rounded">show 8
+                more</button>
+        </div>
+
+
+
+        <!-- Recently viewed products -->
+        <div class="container">
+            <div class="container mt-5">
+
+                <h2 class="fs-4 fw-normal text-black">Recently Viewed Products</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 pt-2">
+
+                    <div class="col rounded-4">
+                        <div class="card rounded-4">
+                            <img src="./image/course/recentlyvw/vw-1.png" style="object-fit: cover;"
+                                class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                            <div class="card-body">
+                                <div><img src="./image/course/icon/meta.png" height="30px" alt=""
+                                        class="rounded border"><small> Meta</small></div>
+                                <h6 class="card-title fs-6 fw-bold pt-2"><small>Meta Front-End Developer</small></h6>
+                                <small class="text-muted ">Professional Certificate</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col rounded-4">
+                        <div class="card rounded-4">
+                            <img src="./image/course/recentlyvw/vw-2.png" style="object-fit: cover;"
+                                class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                            <div class="card-body">
+                                <div><img src="./image/course/icon/icon-5.png" height="30px" alt=""
+                                        class="rounded border"><small></small>
+                                    Google</small></div>
+                                <h6 class="card-title fs-6 fw-bold pt-2"><small>Gemini for DevOps Engineers</small></h6>
+
+                                <small class="text-muted ">Course</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col rounded-4">
+                        <div class="card rounded-4">
+                            <img src="./image/course/recentlyvw/vw-3.png" style="object-fit: cover;"
+                                class="card-img-top p-2 rounded-4" height="190px" alt="...">
+                            <div class="card-body">
+                                <div><img src="./image/course/icon/kodekloud.png" height="30px" alt=""
+                                        class="rounded border"><small> Kodekloud</small></div>
+                                <h6 class="card-title fs-6 fw-bold pt-2"><small>Google Project Management</small></h6>
+                                <small class="text-muted ">Course</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- flex type 2 cards -->
+        <div class="row flex-lg-row-reverse align-items-center g-5 my-5">
+
+            <div class="col-10 col-sm-8 col-lg-6">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 order-1">
+                            <img src="./image/course/flexcards/crd-2.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <span class="fw-bold">Microsoft</span>
+                                <h5 class="card-title mt-3">New! Microsoft Cloud Support Associate Professional
+                                    Certificate</h5>
+                                <p class="card-text mt-3">Prepare for an in-demand career in cloud support today.</p>
+                                <button type="button"
+                                    class="btn btn-outline-primary btn-lg fw-bold fs-6 px-3 py-2">Enroll
+                                    Today</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 order-1">
+                            <img src="./image/course/flexcards/crd-1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <span class="fw-bold">Microsoft</span>
+                                <h5 class="card-title mt-3">New! Microsoft Business Analyst Professional Certificate
+                                </h5>
+                                <p class="card-text mt-3">Prepare for a role as a business analyst.</p>
+                                <button type="button"
+                                    class="btn btn-outline-primary btn-lg fw-bold fs-6 px-3 py-2 mt-3">Enroll
+                                    Today</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Catagories -->
+        <div class="container-fluid">
+            <h2 class="fs-2">Categories</h2>
+
+            <div class="row row-cols-1 row-cols-md-4 gap-2 justify-content-center mt-5">
+                <div class="col  btn border py-4 text-white">Arts and Humanities</div>
+                <div class="col  btn border py-4 text-white">Business</div>
+                <div class="col  btn border py-4 text-white">Computer Science</div>
+                <div class="col  btn border py-4 text-white">Data Science</div>
+                <div class="col  btn border py-4 text-white">Information Technology</div>
+                <div class="col  btn border py-4 text-white">Health</div>
+                <div class="col  btn border py-4 text-white">Math and Logic</div>
+                <div class="col  btn border py-4 text-white">Personal Development</div>
+                <div class="col  btn border py-4 text-white">Physical Science and Engineering</div>
+                <div class="col  btn border py-4 text-white">Social Sciences</div>
+                <div class="col  btn border py-4 text-white">Language Learning</div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                  * HOME TAB END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                * MY LEARNING TAB START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-lg-fluid container" id="myLearning">
+        <h1 class="fs-3">My Learning</h1>
+        <div class="mt-4">
+            <span class="rounded-pill text-white border border-black border-1 bg-secondary fw-bold px-3 py-1"><small>In
+                    Progress</small></span>
+            <span
+                class="ms-1 rounded-pill border border-black border-1 fw-bold px-3 py-1"><small>Complete</small></span>
+        </div>
+
+        <div class="container-fluid  p-5">
+            <div class="card mb-3">
+                <div class="row g-0 col-rows-1 col-rows-sm-3">
+
+                    <div class="col-md-2 p-5">
+                        <img src="./image/course/front-end-dev1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+
+                    <div class="col-md-6 p-1">
+                        <div class="card-body border-2 border-end mt-2">
+                            <small class="card-title">Course | Meta</small>
+
+                            <h3 class="text-primary">Introduction to Front-End Development</h3>
+
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+                            <div class="progress" role="progressbar" aria-label="Animated striped example"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                                    75%
+                                </div>
+                            </div>
+
+                            <p class="card-text"><small class="text-body-secondary">Overall progress</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-2">
+                        <h6 class="">Next Up</h6>
+                        <span class="bi bi-play-circle text-primary fs-4"></span><strong class="text-primary">
+                            What
+                            is a
+                            Web
+                            server and how does it
+                            work
+                            ?</strong><br>
+                        <small class="card-title ms-4 ps-1">Week 1 | 2 min</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                 * MY LEARNING TAB END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                    * FOOTER START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 mb-5 ">
+
+
+
+            <div class="col mb-3">
+                <h5>Coursera</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">What We Offer</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Leadership</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Catalog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Coursera Plus</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Professional
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">MasterTrack®
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Degrees</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Enterprise</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Government</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Campus</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Partner</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social Impact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Community</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Beta Testers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The Coursera
+                            Podcast</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teaching Center</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>More</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Press</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Directory</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affiliates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Modern Slavery
+                            Statement</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manage Cookie
+                            Preferences</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 d-flex flex-column gap-4">
+                <h4>Mobile App</h4>
+                <img src="./image/app-store.png" alt="" width="200px">
+                <img src="./image/play-store.png" alt="" width="200px">
+                <div class="container "><img src="./image/certified-corp.png" alt="" width="100px" class="ms">
+                </div>
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between pb-4 pt-2 my-4 border-top">
+            <p>© 2024 Coursera Inc. All rights reserved.</p>
+
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-linkedin rounded-circle"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!--Bootstrap JS file CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
