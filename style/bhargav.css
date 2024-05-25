@@ -83,8 +83,9 @@ nav>div>a>img {
 
   #banner {
     border-radius: 15px !important;
-    left: 107px;
+    left: 100px;
     top: 388px;
+    border: 2px solid black !important;
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.248);
 }
@@ -121,4 +122,9 @@ nav>div>a>img {
 #testimonials{
   border-radius: 20px;
   /* justify-content: space-evenly; */
+}
+
+
+body > div.container.border.pb-5.position-relative{
+  isolation: isolate;
 }
