@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style/style.css">
+
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Coursera Plus | Unlimited Access to 7,0000 </title>
+
+</head>
+
+<body>
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                             * NAVBAR START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <nav
+        class="navbar navbar-expand-lg bg-white  w-100 top-0 start-0 position-fixed z-1 flex-column pt-0  py-3 border-bottom">
+
+
+
+        <!-- dark navbar strip -->
+        <div class="container-fluid bg-dark text-white ps-5  mb-2  d-none d-md-block" id="dark-nav">
+
+            <ul class="nav nav-underline  gap-5 ps-5" id="pills-tabs" role="tablist">
+                <li class="nav-item ps-5" role="presentation">
+                    <button class="nav-link active nav-link-white" id="pills-individual-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><a href="./courses.html" class="text-decoration-none nav-link-white">
+                            For <strong>Individuals</strong></a></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-businesses-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><a href="./courses.html" class="text-decoration-none nav-link-white">
+                            For <strong>Businesses</strong></a></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-Universities-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">For <strong>Universities</strong></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link nav-link-white" id="pills-governments-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">For <strong>Governments</strong></button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Main navbar -->
+        <div class="container gap-3 pt-1">
+
+            <!-------------------------------- LOGO -------------------------------------->
+            <a class="navbar-brand order-2 order-lg-0" href="./index.html"><img
+                    src="./image/business/coursera-business-logo.png" class="img-fluid" alt=""></a>
+
+            <!-- search button in mobile screen -->
+            <!-- <i class="bi bi-search order-2"></i> -->
+
+            <!-- Hamburger -->
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse  flex-grow-0" id="navbarSupportedContent">
+                <!--------------------------------DROPDOWN OPTIONS -------------------------------------->
+                <ul class="navbar-nav mb-lg-0  gap-3 ">
+                    <!-- Why coursera -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fs-6">Why Coursera</span>
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- solutions -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fs-6">Solutions</span>
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fs-6"> Resources</span>
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- For Teams -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fs-6"> For Teams</span>
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Compare plans -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fs-6"> Compare plans</span>
+                        </a>
+                        <ul class="dropdown-menu p-3">
+                            <h5>Goals</h5>
+                            <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+                            <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+            <button class="btn btn-primary d-none d-lg-block">Contact Sales</button>
+        </div>
+
+    </nav>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                              * NAVBAR END 
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                              * BUSINESS HERO SECTION START 
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="business-hero">
+        <div class="container mt-5 position-relative">
+            <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+                <!-- right lady image -->
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./image/business/Businesspage_hero.jpg" class="d-block mx-lg-auto img-fluid"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+
+                <!-- left text -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Make talent your competitive advantage
+                    </h1>
+
+                    <div class="row text-start py-3">
+                        <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                                Strengthen critical skills with content you can trust</span></p>
+                        <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                                Develop, retain, and advance critical talent</span></p>
+                        <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                                Lower training costs without sacrificing quality</span></p>
+                        <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                                Track and measure skills to demonstrate ROI</span></p>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
+                    </div>
+                    <p class="mt-3"><span class="text-dark ">
+                            Upskilling fewer than 125 employees? <a href="./index.html">Get Coursera for Teams <i
+                                    class="bi bi-box-arrow-up-right"></i></a></span></p>
+                </div>
+            </div>
+
+            <!-- dark label -->
+            <div class="container position-absolute bg-dark  text-white d-none  d-xl-flex  justify-content-around rounded  px-3 py-4 "
+                id="dark-label-business">
+                <div class="d-flex justify-content-between align-items-center gap-4  p-3 border-end border-secondary">
+                    <h1>24%</h2>
+                        <small>Reduction in training costs</small>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center gap-4 p-3">
+                    <h1>38%</h2>
+                        <small>Higher retention rates</small>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center gap-4 p-3 border-start border-secondary">
+                    <h1>25%</h2>
+                        <small>More employee productivity</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Companies which use coursera -->
+        <div class="container-fluid bg-white pt-5" id="companies-coursera-business">
+            <div class="container col-xxl-8 px-4 py-5 bg-white">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6 order-1">
+                        <img src="./image/business/companies-business.png" class="d-block mx-lg-auto img-fluid"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Leaders at 3,800+ companies develop
+                            their talent with Coursera
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- upskill section -->
+    <div class="container-fluid col-xxl-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./image/business/upskill-business.png" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <span class="fw-bold fs-4">UP SKILL EMPLOYEES</span>
+
+                <h1 class="display-5 fw-bold text-body-emphasis mt-4 mb-3">Strengthen critical skills across every team
+                </h1>
+                <p class="lead">Increase business impact and agility with in-demand Generative AI, tech, data, and
+                    leadership skills.</p>
+                <div class="row text-start py-3">
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Use role-based assessments to identify skills gaps and advancement
+                            opportunities</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Advance skills in roles that drive rapid transformation for your company</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Enhance leadership skills to engage, navigate, and motivate employees amid
+                            change</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Learn and apply skills faster with hands-on projects and personalized
+                            learning</span></p>
+                </div>
+
+                <div class="text-primary fw-bold"><a href="./courses.html">Explore Skill Based Learning <i
+                            class="bi bi-arrow-right"></i></a>
+
+                </div>
+                <p class="mt-5 p-4 display-5 fs-4 fw-normal">&quotWhat I’ve learned through Coursera allows me to better
+                    guide
+                    and inform
+                    the
+                    professional
+                    data
+                    analysts on my team to solve tough business problems and accelerate the development of our digital
+                    capabilities.&quot</p>
+
+                <div class="d-flex">
+                    <img src="./image/business/p&g-business.png" class="img-fluid" width="100px" alt="">
+                    <div class="d-flex flex-column p-3">
+                        <span><strong>Sabine M.</strong></span>
+                        <span>Research Fellow, Procter & Gamble</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- learn from best -->
+    <div class="container-fluid col-xxl-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6 order-1">
+                <img src="./image/business/learn-from-best-business.png" width="590px"
+                    class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes" width="700" height="500"
+                    loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <span class="fw-bold fs-4">WORLD CLASS CONTENT</span>
+
+                <h1 class="display-5 fw-bold text-body-emphasis mt-4 mb-3">Learn from the best
+                </h1>
+                <p class="lead">Lower training costs with in-demand content and trusted credentials from 325+ top
+                    companies and universities.</p>
+                <div class="row text-start py-3">
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Provide expert instruction from 13 of the top 20 business schools in the world</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Prepare employees for digital roles with career credentials from industry experts</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Drive continuous learning with short videos, lessons, and hands-on projects</span></p>
+                    <p class="bi bi-check2 text-primary"><span class="text-dark font-style-normal">
+                            Curate your own content experiences or leverage our job-aligned collections</span></p>
+                </div>
+
+                <div class="text-primary fw-bold"><a href="./courses.html">Explore World Class Content <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * SEARCH COURSES START 
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid py-5 mb-5 border border-bottom-1">
+        <h2 class="text-center fw-bold fs-1">Search our catalog of world-class content</h2>
+        <div class="container text-center mt-5">
+
+            <input type="search" class="w-50 p-1 border-end-0 border-2" placeholder="e.g Machine learning"><i
+                class="bi bi-search border border-black border-2  border-start-0"></i>
+
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-xl-4 flex-column flex-xl-row mt-4 mb-5"
+                id="business-pills">
+                <h6 class="text-end pt-2">POPULAR</h6>
+                <span class="btn border border-0 rounded-pill text-primary">Business</span>
+                <span class="btn border border-0 rounded-pill text-primary">Computer Science</span>
+                <span class="btn border border-0 rounded-pill text-primary">Data Science</span>
+                <span class="btn border border-0 rounded-pill text-primary">Health</span>
+                <span class="btn border border-0 rounded-pill text-primary">Information Technology</span>
+                <span class="btn border border-0 rounded-pill text-primary">Arts & Humanities</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * SEARCH COURSES END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                              * BUSINESS HERO SECTION END 
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER START
+    ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 mb-5 ">
+
+
+
+            <div class="col mb-3">
+                <h5>Coursera</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">What We Offer</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Leadership</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Catalog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Coursera Plus</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Professional
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">MasterTrack®
+                            Certificates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Degrees</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Enterprise</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Government</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Campus</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Partner</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social Impact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Community</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Beta Testers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The Coursera
+                            Podcast</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teaching Center</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>More</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Press</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Directory</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affiliates</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Modern Slavery
+                            Statement</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manage Cookie
+                            Preferences</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 d-flex flex-column gap-4">
+                <h4>Mobile App</h4>
+                <img src="./image/app-store.png" alt="" width="200px">
+                <img src="./image/play-store.png" alt="" width="200px">
+                <div class="container "><img src="./image/certified-corp.png" alt="" width="100px" class="ms">
+                </div>
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between pb-4 pt-2 my-4 border-top">
+            <p>© 2024 Coursera Inc. All rights reserved.</p>
+
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-linkedin rounded-circle"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg></a></li>
+
+
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER END
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!--Bootstrap JS file CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Local jQuery file link -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
