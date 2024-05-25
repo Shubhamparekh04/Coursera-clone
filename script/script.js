@@ -18,9 +18,9 @@ $(document).ready(function () {
 
     $(document).on("scroll", function () {
 
-        var CurrentScrolled = $(this).scrollTop();
+        var CurrentScrolled = $(document).scrollTop();
 
-        if (CurrentScrolled > LastScrolled) {
+        if (CurrentScrolled >= LastScrolled) {
             $("body > nav > div.container-fluid.bg-dark.text-white.ps-5.mb-2").slideUp();
         } else {
             $("body > nav > div.container-fluid.bg-dark.text-white.ps-5.mb-2").slideDown();
