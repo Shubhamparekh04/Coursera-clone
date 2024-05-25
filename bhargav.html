@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style/bhargav.css">
+  <title>Coursera</title>
+</head>
+
+<body>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                             * NAVBAR START
+    ----------------------------------------------------------------------------------------------------------------------------->
+
+  <nav class="navbar navbar-expand-lg bg-white w-100 position-fixed  top-0 z-1">
+
+
+    <div class="container gap-3">
+
+      <!-- logo -->
+      <a class="navbar-brand order-2 order-lg-0" href="#"><img src="./image/logo.png" class="img-fluid" alt=""></a>
+
+      <!-- search button in mobile screen -->
+      <i class="bi bi-search order-2"></i>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      <div class="collapse navbar-collapse align-items-center gap-3" id="navbarSupportedContent">
+
+        <!-- Explore drope down -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown border border-black rounded-2 px-3 py-0">
+            <a class="nav-link dropdown-toggle text-primary fw-bolder" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+
+            <ul class="dropdown-menu p-3">
+              <h5>Goals</h5>
+              <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+              <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <!-- Search bar & button -->
+        <form class="d-flex flex-grow-1 position-relative " role="search">
+
+          <input class="form-control rounded-pill lh-lg  " type="search" placeholder="What do you want to learn ? "
+            aria-label="Search">
+
+          <div id="magni" class="d-flex align-items-center position-absolute">
+            <button class="btn rounded-circle text-light" type="submit"><i class="bi bi-search "></i>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Online degree/new career/language drop down -->
+        <ul class="navbar-nav mb-lg-0 ms-auto gap-3 align-items-center">
+
+          <!-- online degree -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Online Degrees</a>
+          </li>
+
+          <!--New career  -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find your New Career</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="bi bi-cart3 position-relative text-muted fs-5" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                1</span>
+            </a>
+          </li>
+
+          <!-- language drop down -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="bi bi-globe2"> English</span>
+            </a>
+
+            <ul class="dropdown-menu p-3">
+              <h5>Goals</h5>
+              <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+              <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+
+          <!-- Bell /dropdown -->
+          <li class="dropdown-center my-auto" id="bell">
+            <i class="bi bi-bell text-muted fs-5" data-bs-toggle="dropdown" aria-expanded="false">
+            </i>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </li>
+
+
+          <!--user (S) drop down-->
+          <li class="nav-item btn-group">
+            <a class="dropdown-toggle text-decoration-none  align-items-center" href="#" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              <span class="btn rounded-circle text-light fw-bold my-auto " id="profile">S</span>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end p-3">
+              <h5>Goals</h5>
+              <li><a class="dropdown-item" href="#">Take Free courses</a></li>
+              <li><a class="dropdown-item" href="#">Earn Degree</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * NAVBAR END 
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * BREADCRUMB START 
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class=" p-1 d-flex container ">
+    <ol class="breadcrumb ">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * BREADCRUMB END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MAINSECTION START
+  ----------------------------------------------------------------------------------------------------------------------------->
+  <div class="container border pb-5 position-relative">
+    <div class="row py-5">
+      <div class="col-6">
+        <h2>Game Devlopment:HTML to unreal</h2>
+        <h2>Engine Mastery</h2>
+        <i class="bi bi-translate">Taught in English</i><br>
+        <div class="mt-5">
+          <button type="button" class="btn btn-primary btn-lg" id="btn">Click to Purches</button>
+          <span>Financial aid available</span>
+        </div>
+
+      </div>
+
+
+      <div class="col-6">
+        <h5>course</h5>
+        <p>Gain insight into a topic and learn the fundamentals</p>
+        <hr>
+        <div class="css-u6psqo">
+          <img src="./image/Karlis Zars(1).jpg" class="css-1hhx4js img-thumbnail rounded-circle "
+            style="max-width:75px;max-height:75px" alt="Karlis Zars">
+          <span>Instructor: Karlis Zars</span>
+        </div>
+        <br>
+
+        <button type="button" class="btn btn-primary btn-sm">PLUS</button>
+        <span>Included with Coursera Plus</span>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MODELPURCHES FORM START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal mt-5" tabindex="-1" id="model-form">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h4 class="modal-title ">Purches Form</h4>
+            <!-- <button type="button" class="btn-close" id="cross" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+
+            <h5><input type="checkbox"> Purchase Course · ₹2,419</h5>
+            <p> <img src="./image/ic_cert.png" alt="logo" height="15px"> Commit to earning a Certificate—it's a trusted,
+              shareable way to <br>
+              showcase your new skills.
+            </p>
+            <h5><input type="checkbox"> Full Course, No Certificate</h5>
+            <p> You will still have access to all course materials for this course.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary p-3" id="close" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary p-3"><a href="./payment.html" class="text-decoration-none text-white">Continue</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MODELPURCHES FORM END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MAINSECTION END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * BANNER START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="container border p-5 mt-3 position-absolute " id="banner">
+    <div class="row ">
+      <div class="col">
+        <h4>Beginner level</h4>
+        <span>Recommended experience </span>
+      </div>
+
+      <div class="col">
+        <h4>2 hours to complete</h4>
+      </div>
+
+
+      <div class="col">
+        <h4>Flexible schedule</h4>
+        <span>Learn at your own pace</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * BANNER END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * NEW HADER , HOME START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+
+  <div class="container" id="container">
+    <div class="row text-decoration-none">
+      <div class="col-auto"><a href="#" class="text-decoration-none text-dark">Home</a></div>
+      <div class="col-auto"><a href="#modules" class="text-decoration-none text-dark">Modules</a></div>
+      <div class="col-auto"><a href="#recommendations" class="text-decoration-none text-dark">Recommendations</a></div>
+      <div class="col-auto"><a href="#testimonials" class="text-decoration-none text-dark">Testimonials</a></div>
+      <hr>
+      <h4>What you'll learn</h4>
+    </div>
+    <div class="row w-75">
+      <div class="col-6">
+        <ol class="list-unstyled">
+          <li><i class="bi bi-check-lg"></i> Identify the foundational concepts and principles of game design and the
+            game development process. </li><br>
+          <li> <i class="bi bi-check-lg"></i> Explore operations within the Unreal Engine, including navigating its
+            interface and utilizing its tools for game development. </li>
+        </ol>
+      </div>
+      <div class="col-6">
+        <ol class="list-unstyled">
+          <li><i class="bi bi-check-lg"></i> Create and deploy simple games using HTML5, focusing on game loops,
+            graphics, and sound. </li><br>
+          <li><i class="bi bi-check-lg"></i> Acquire practical skills in Unreal Engine to design, develop, and complete
+            a basic game project. </li>
+        </ol>
+      </div>
+    </div>
+    <br>
+    <h4>Skills you'll gain</h4>
+    <button class="rounded-pill border border-0">Creative Vision Implementation
+    </button>
+    <button class="rounded-pill border border-0">Unreal Engine Navigation
+    </button>
+    <button class="rounded-pill border border-0">Game Development Tools
+    </button>
+    <button class="rounded-pill border border-0">Game Design Principles
+    </button><br><br>
+    <button class="rounded-pill border border-0">HTML5 Game Development
+    </button>
+    <br><br><br>
+    <div>
+      <h4>Details to know</h4>
+      <div class="row">
+        <div class="col-4">
+          <i class="bi bi-linkedin fs-3 text-primary"></i>
+          <h6>Shareable certificate</h6>
+          <p>Add to your LinkedIn profile</p>
+        </div>
+
+        <div class="col-4 ">
+          <i class="bi bi-bell-fill fs-3"></i>
+          <h6>Recently updated! </h6>
+          <p>May 2024</p>
+        </div>
+        <div class="col-4">
+          <i class="bi bi-list-check fs-3"></i>
+          <h6>Assessments</h6>
+          <p>1 assignment</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br><br><br>
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * CERTIFICATE START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="container border p-4 ">
+    <div class="row ">
+      <div class="col-6 ">
+        <h4>See how employees at top companies are mastering <br>in-demand skills</h4><br>
+        <a href="#" class="text-decoration-none">Learn more about Coursera for Business</a>
+      </div>
+      <div class="col-6">
+        <img src="./image/certificate.png" alt="certificate" height="140px" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container border p-4 mt-5">
+    <div class="row">
+      <div class="col-8">
+        <h4>Earn a career certificate</h4>
+        <br>
+        <p>Add this credential to your LinkedIn profile, resume, or CV <br>
+          Share it on social media and in your performance review</p>
+      </div>
+      <div class="col-4  position-relative ">
+        <img src="./image/certificate(1).png" alt="certificate(1)" id="certificate"
+          class="border position-absolute img-fluid">
+      </div>
+    </div>
+
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * CERTIFICATE END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MODULE START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="container mt-5" id="modules">
+    <h4>There is 1 module in this course</h4>
+    <p class="mt-5">In the rapidly evolving realm of game development, the transition from foundational concepts to
+      mastering advanced <br>platforms like Unreal Engine marks a pivotal journey for beginners and intermediate
+      enthusiasts alike. This short course is <br> crafted to demystify this path, offering a structured and immersive
+      learning experience that bridges the gap between </p>
+  </div>
+
+  <div class="accordion accordion-flush pb-3 ms-5 ps-5" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <span class="fw-bold  collapsed  text-primary fs-6" id="more" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          readme more....
+        </span>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          This course is tailored for aspiring game developers, computer science students, hobbyists, indie game
+          developers, and educators eager to delve into the exciting world of game design and development. Whether
+          you're a novice exploring the fundamentals or an enthusiast seeking to enhance your skills, this course offers
+          valuable insights and practical knowledge applicable to game creation across various platforms. <br><br>
+
+          Participants should possess basic computer literacy and familiarity with using web browsers and software
+          applications. An interest in learning about game design and development is essential to fully engage with the
+          course content. With these foundational elements in place, participants can embark on a rewarding journey into
+          the intricacies of game creation and development. <br><br>
+
+          Throughout this course, learners will identify foundational concepts and principles of game design and the
+          game development process. They'll create and deploy simple games using HTML5, focusing on game loops,
+          graphics, and sound. Additionally, they'll explore operations within the Unreal Engine, navigating its
+          interface and utilizing its tools for game development. By course end, participants will acquire practical
+          skills in Unreal Engine to design, develop, and complete a basic game project, empowering them to bring their
+          creative visions to life in the digital realm. <br></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <div class="accordion accordion-flush pb-3" id="accordionFlushExample1">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="fw-bold accordion-button collapsed border" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Game Devlopment:HTML to Unreal Engine Mastery <br>
+                Module 1. 2 hours to complete
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body border">
+                In the rapidly evolving realm of game development, the transition from foundational concepts to
+                mastering advanced platforms like Unreal Engine marks a pivotal journey for beginners and intermediate
+                enthusiasts alike. This short course is crafted to demystify this path, offering a structured and
+                immersive learning experience that bridges the gap between basic game design principles and the
+                complexities of modern game engines.
+                <h5 class="mt-3">What's included</h5>
+                <div class="row">
+                  <div class="col-3"><i class="bi bi-play-circle-fill"></i> 13 videos</div>
+                  <div class="col-3"><i class="bi bi-book-half"></i> 4 readings</div>
+                  <div class="col-3"><i class="bi bi-file-earmark"></i> 1 assignmen</div>
+                  <div class="col-3"><i class="bi bi-mastodon"></i> 3 discussion prompts</div>
+
+                  <div class="mt-5">
+                    <i class="bi bi-chevron-compact-right "></i><span>Show info about module content</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 border p-4">
+        <h4>Instructor</h4><br>
+        <div class="css-u6psqo d-flex ">
+          <img src="./image/Karlis Zars(1).jpg" class="css-1hhx4js img-thumbnail rounded-circle "
+            style="max-width:75px;max-height:75px" alt="Karlis Zars">
+          <div class="mt-3">
+            <span> Karlis Zars</span> <br>
+            <span> Courses • 1,548 learners</span>
+          </div>
+        </div>
+        <hr>
+        <h4>Offered by</h4><br>
+        <div class="css-u6psqo d-flex ">
+          <img src="./image/coursera-instructornetwork-full-rgb-360x360.png"
+            class="css-1hhx4js img-thumbnail rounded-circle " style="max-width:75px;max-height:75px" alt="Karlis Zars">
+          <div class="mt-3">
+            <span>Coursera Instructor Network</span> <br>
+            <span class="text-primary"> Leran more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * MODULE END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * RECOMMENDED  START
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="container mt-5" id="recommendations">
+    <h3>Recommended if you're interested in Software Development</h3>
+    <br>
+    <button type="button" class="btn btn-outline-secondary p-5  border-0">Degrees</button>
+    <hr>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+      <div class="col">
+        <div style="height: 400px;" class="card ">
+          <div class=" card1 container ">
+            <img src="./image/img(1).png" class="card-img-top mt-3" alt="..." height="200px" width="200px">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <img src="./image/Square-logo-1.png.crdownload" height="20px"><span> Indian Institute of Technology
+                Guwahati</span>
+              <p class="card-text"><b>Master of Science in Cyber Security</b></p>
+            </div>
+            <small> 24-60 Monts</small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div style="height: 400px;" class="card ">
+          <div class=" card1 container ">
+            <img src="./image/img(2).png" class="card-img-top mt-3" alt="..." height="200px" width="200px">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <img src="./image/5.-Square-logo-2.png.crdownload" height="20px"><span> Birla Institute of Technology &
+                Science,</span>
+              <p class="card-text"><b>Master of Science in Cyber Security</b></p>
+            </div>
+            <small> 24-60 Monts</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div style="height: 400px;" class="card ">
+          <div class=" card1 container ">
+            <img src="./image/img(3).png" class="card-img-top mt-3" alt="..." height="200px" width="200px">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <img src="./image/Boulder-logo-3.png.crdownload" height="20px"><span> University of Colorado Boulder,
+                Lorem
+                ip</span>
+              <p class="card-text"><b>Master Of Science in Data Science</b></p>
+            </div>
+            <small>18 Months</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div style="height: 400px;" class="card ">
+          <div class=" card1 container ">
+            <img src="./image/img(4).png" class="card-img-top mt-3" alt="..." height="200px" width="200px">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <img src="./image/logo-squre-4.png.crdownload" height="20px"><span> International Institute of
+                Information</span>
+              <p class="card-text"><b>Master Of Science in Managment(iMSM)</b></p>
+            </div>
+            <small>12 Months</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * RECOMMENDED END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * TESTIMONIALS  START
+  ----------------------------------------------------------------------------------------------------------------------------->
+  <div class="container mt-5" id="testimonials">
+    <h3>Why people choose Coursera for their career</h3>
+    <div class=" d-flex  justify-content-evenly mt-5">
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <img src="./image/photo1.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials">
+          <div>
+            <h5> Felipe M.</h5>
+            <span> Learner since 2018</span>
+          </div>
+        </div>
+        <br>
+        <p><small>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn
+            whenever it fits my schedule and mood."</small></p>
+
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <img src="./image/photo2.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials">
+          <div>
+            <h5> Jennifer J.</h5>
+            <span> Learner since 2020</span>
+          </div>
+        </div>
+        <br>
+        <p><small>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn
+            whenever it fits my schedule and mood."</small></p>
+
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <img src="./image/photo3.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials">
+          <div>
+            <h5> Larry W.</h5>
+            <span> Learner since 2021</span>
+          </div>
+        </div>
+        <br>
+        <p><small>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn
+            whenever it fits my schedule and mood."</small></p>
+
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <img src="./image/photo4.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials">
+          <div>
+            <h5> Chaitanya A.</h5>
+            <!-- <span> Learner since 2018</span> -->
+          </div>
+        </div>
+        <br>
+        <p><small>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn
+            whenever it fits my schedule and mood."</small></p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h4>New to Software Development? Start here.</h4>
+    <div class=" d-flex  justify-content-evenly mt-5">
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <!-- <img src="./image/photo1.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials"> -->
+          <div>
+            <h5>Youre Guide to Game Design Degrees</h5><br>
+            <span>November 29, 2023</span>
+            <p>Article</p>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <!-- <img src="./image/photo1.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials"> -->
+          <div>
+            <h5>Being a Python Developer: What They Can Do, Earn, and More</h5><br>
+            <span>March 22, 2024</span>
+            <p>Article</p>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <!-- <img src="./image/photo1.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials"> -->
+          <div>
+            <h5>What Is a Game Developer (and How Do I Become One)?</h5><br>
+            <span>November 29, 2023</span>
+            <p>Article· 7 min read</p>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-3 border my-4 mx-1 py-2 px-1 rounded">
+        <div class="d-flex justify-content-evenly">
+          <!-- <img src="./image/photo1.png" alt="Felipe" class="rounded-circle" height="70px" id="testimonials"> -->
+          <div>
+            <h5>How Do You Become a Video Game Producer?</h5><br>
+            <span>November 29, 2023</span>
+            <p>Article</p>
+          </div>
+        </div>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4  container mx-auto mt-5">
+    <div class="col" style="height: 600px;">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./image/cardimg1.png'); background-size: cover; background-repeat: no-repeat; background-position: right; ">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class=" mb-4 display-6 lh-1 fw-bold" style="color: black;">Open new doors with Coursera Plus</h3>
+
+          <p style="color: black;">Unlimited access to 7,000+ world-class courses, hands-on projects, and job-ready certificate programs - all included in your subscription</p>
+          <ul class="d-flex list-unstyled mt-auto">
+               
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" style="height: 600px;">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./image/cardimg2.png'); background-size: cover; background-repeat: no-repeat; background-position:-190px; ">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="mb-4 display-6 lh-1 fw-bold" style="color: white;">Advance your career with an online degree</h3>
+
+          <p style="color: white;">Earn a degree from world-class universities - 100% online</p>
+          <ul class="d-flex list-unstyled mt-auto">
+               
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" style="height: 600px;">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./image/cardimg3.png'); background-size: cover; background-repeat: no-repeat; background-position: right; ">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class=" mb-4 display-6 lh-1 fw-bold" style="color: white;">Join over 3,400 global companies that choose Coursera for Business</h3>
+
+          <p style="color: white;">Upskill your employees to excel in the digital economy</p>
+          <ul class="d-flex list-unstyled mt-auto">
+               
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                            * TESTIMONIALS END
+  ----------------------------------------------------------------------------------------------------------------------------->
+
+ <!---------------------------------------------------------------------------------------------------------------------------
+                                                      * FOOTER START
+ ----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 mb-5 ">
+
+
+
+          <div class="col mb-3">
+              <h5>Coursera</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">What We Offer</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Leadership</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Catalog</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Coursera Plus</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Professional
+                          Certificates</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">MasterTrack®
+                          Certificates</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Degrees</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Enterprise</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Government</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">For Campus</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become a Partner</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social Impact</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col mb-3">
+              <h5>Community</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learners</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partners</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Beta Testers</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The Coursera
+                          Podcast</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech Blog</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teaching Center</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col mb-3">
+              <h5>More</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Press</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessibility</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Directory</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affiliates</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Modern Slavery
+                          Statement</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manage Cookie
+                          Preferences</a></li>
+              </ul>
+          </div>
+
+          <div class="col mb-3 d-flex flex-column gap-4">
+              <h4>Mobile App</h4>
+              <img src="./image/app-store.png" alt="" width="200px">
+              <img src="./image/play-store.png" alt="" width="200px">
+              <div class="container "><img src="./image/certified-corp.png" alt="" width="100px" class="ms">
+              </div>
+      </footer>
+      <div class="d-flex flex-column flex-sm-row justify-content-between pb-4 pt-2 my-4 border-top">
+          <p>© 2024 Coursera Inc. All rights reserved.</p>
+
+          <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                      </svg></a></li>
+
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-linkedin rounded-circle"
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                      </svg></a></li>
+
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                          <path
+                              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                      </svg></a></li>
+
+
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                          <path
+                              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                      </svg></a></li>
+
+
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path
+                              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                      </svg></a></li>
+
+
+          </ul>
+      </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------
+                                                    * FOOTER END
+  ----------------------------------------------------------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./script/bhargav.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+  /* padding-top: 0px; */
+  /* margin-top: 55px; */
+ 
+}
+
+body > nav:nth-child(2){
+  margin-top: 60px;
+  /* padding: 10px; */
+  /* font-size: ; */
+
+}
+
+.navbar{
+  margin-bottom: 50px;
+}
+
+/* logo sizing */
+nav>div>a>img {
+  width: 120px;
+}
+
+
+/* magnifier button circle style */
+#magni>button {
+  background-color: #003584;
+  padding: 3px 8px !important;
+}
+
+/* Profile button circle style */
+#profile {
+  padding: 3px 11px !important;
+  background-color: #003584;
+}
+
+
+/* magnifier inside search-box */
+#magni {
+  top: 7px;
+  right: 10px;
+}
+
+
+/* card item notification size */
+
+.bi-cart3 {
+  font-size: 5px;
+}
+
+/* badge */
+
+.badge {
+  font-size: 10px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+                                                              Navbar-End
+-----------------------------------------------------------------------------------------------------------------------------------------------------*/
