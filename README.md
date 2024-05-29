@@ -23,7 +23,7 @@ To set up the project locally, follow these steps:
 2. **Navigate to the root folder’s file:**
     Open `index.html` in your web browser.
 
-## Usage
+## Usage (Website Flow)
 
 ### Browsing Courses
 - Navigate to the **“For Individuals”** tab on the black navigation bar to browse available courses.
@@ -54,6 +54,7 @@ To set up the project locally, follow these steps:
 ## Challenges and Solutions
 
 - **Navbar Hide/Show Functionality:** Implemented course banner/black-strip navigation bar hide on scroll down and show on scroll up using jQuery.
+- **Readmore Functionality:** Implemented readmore functionality (before click: content hidden/ after click : content shown) with use for accordian item modifiction.
 
 ## Future Improvements
 
