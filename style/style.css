@@ -42,6 +42,8 @@ nav>div>a>img {
 }
 
 
+
+
 /* Black nav-bars color to be change  */
 .nav-link-white {
     color: white !important;
@@ -50,11 +52,18 @@ nav>div>a>img {
 
 }
 
+
 /* on hover button of black nav bar */
 .nav-link-white:hover {
     background-color: white;
     color: black !important;
     border-bottom-color: white !important;
+
+}
+
+/* on hover any button of black nav turn .nav-link-white text color white */
+#pills-tabs>li>button:hover .nav-link-white {
+    color: black !important;
 }
 
 /* banner bg color */
